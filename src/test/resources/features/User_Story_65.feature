@@ -1,5 +1,5 @@
 @RES-79
-Feature:
+Feature: As a student, I should be able to borrow a book
 
 	#1-Student can borrow books in books page.
   @RES-67 @RES-78
