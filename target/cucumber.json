@@ -1,0 +1,41 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-25T13:54:59.190Z",
+        "line": 4,
+        "name": "As a User, I should be able to login",
+        "description": "",
+        "id": "login-functionality;as-a-user--i-should-be-able-to-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1436700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I login as a user",
+            "match": {
+              "location": "Login.i_login_as_a_user()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
