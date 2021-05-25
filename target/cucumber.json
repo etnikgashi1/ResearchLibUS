@@ -3,25 +3,657 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-05-25T13:54:59.190Z",
-        "line": 4,
-        "name": "As a User, I should be able to login",
+        "start_timestamp": "2021-05-25T19:17:22.997Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3426089400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify that Student is able to login",
         "description": "",
-        "id": "login-functionality;as-a-user--i-should-be-able-to-login",
+        "id": "login-functionality;verify-that-student-is-able-to-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 518441600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1436700,
+              "duration": 1406594800,
               "status": "passed"
             },
             "line": 5,
-            "name": "I login as a user",
+            "name": "I navigate to the login page",
             "match": {
-              "location": "Login.i_login_as_a_user()"
+              "location": "Login.i_navigate_to_the_login_page()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40798400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I write my email address \"student47@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student47@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Login.i_write_my_email_address(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16341200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I write my password \"3lUpdof3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3lUpdof3\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Login.i_write_my_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 337023800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1523306500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see books page",
+            "match": {
+              "location": "Login.i_should_see_books_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T19:17:30.293Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2673981300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify that Student is able to login",
+        "description": "",
+        "id": "login-functionality;verify-that-student-is-able-to-login;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 578582000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1423215500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29187200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I write my email address \"student48@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student48@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Login.i_write_my_email_address(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17340600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I write my password \"b0zgv1ab\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"b0zgv1ab\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Login.i_write_my_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 341123100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1559626400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see books page",
+            "match": {
+              "location": "Login.i_should_see_books_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T19:17:36.919Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2628424300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify that Student is able to login",
+        "description": "",
+        "id": "login-functionality;verify-that-student-is-able-to-login;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 561488400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1550321200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29287500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I write my email address \"student49@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student49@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Login.i_write_my_email_address(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16486600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I write my password \"npSk3tsr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"npSk3tsr\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Login.i_write_my_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 467593600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2051021400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should see books page",
+            "match": {
+              "location": "Login.i_should_see_books_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T19:17:44.226Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2663256700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Verify that Librarian is able to login",
+        "description": "",
+        "id": "login-functionality;verify-that-librarian-is-able-to-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 521301400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1402974000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29952600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I write my email address \"librarian26@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian26@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Login.i_write_my_email_address(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16467000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I write my password \"gFOHHm6H\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gFOHHm6H\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Login.i_write_my_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 352769700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1535233100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see dashboard page",
+            "match": {
+              "location": "Login.i_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T19:17:50.753Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2629206600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Verify that Librarian is able to login",
+        "description": "",
+        "id": "login-functionality;verify-that-librarian-is-able-to-login;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 529009600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1488694700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28357600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I write my email address \"librarian27@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian27@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Login.i_write_my_email_address(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17473400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I write my password \"ZM9JMdIK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ZM9JMdIK\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Login.i_write_my_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 331295400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1523639300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see dashboard page",
+            "match": {
+              "location": "Login.i_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T19:17:57.303Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2624642000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Verify that Librarian is able to login",
+        "description": "",
+        "id": "login-functionality;verify-that-librarian-is-able-to-login;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 526940400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1516336200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28056800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I write my email address \"librarian28@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian28@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "Login.i_write_my_email_address(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17705100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I write my password \"wVFVnaCO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wVFVnaCO\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Login.i_write_my_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 422217800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2044835500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I should see dashboard page",
+            "match": {
+              "location": "Login.i_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
