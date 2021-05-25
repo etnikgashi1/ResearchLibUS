@@ -1,6 +1,7 @@
 package com.cybertekschool.step_definitions;
 
-import cucumber.api.java.en.Given;
+
+import io.cucumber.java.en.Given;
 
 public class Login {
     @Given("I login as a user")
