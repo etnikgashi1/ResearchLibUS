@@ -5,6 +5,11 @@ import com.cybertekschool.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class User_Story_65_Step_Definitions {
@@ -16,8 +21,13 @@ public class User_Story_65_Step_Definitions {
 
     @When("the student logins successfully")
     public void the_student_logins_successfully() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+     //I will create method for student login here but when the login functionality added I will change it.
+    Driver.get().findElement(By.cssSelector("#inputEmail")).sendKeys(ConfigurationReader.get("student_email"));
+
+    Driver.get().findElement(By.cssSelector("#inputPassword")).sendKeys(ConfigurationReader.get("student_pass"));
+
+    Driver.get().findElement(By.xpath("//button")).click();
+
     }
 
     @When("click Borrow Book option for any unborrowed book")
