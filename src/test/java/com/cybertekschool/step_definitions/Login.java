@@ -47,4 +47,16 @@ public class Login {
         wait.until(ExpectedConditions.urlContains("books"));
         Assert.assertTrue("Link ends with books",Driver.get().getCurrentUrl().endsWith("books"));
     }
+
+    @Then("I should see This field is required. message pop up")
+    public void i_should_see_This_field_is_required_message_pop_up() {
+        LoginPage login = new LoginPage();
+        Assert.assertTrue(login.noCredError.isDisplayed());
+    }
+
+    @Then("I should see Sorry, Wrong Email or Password message pop up")
+    public void i_should_see_Sorry_Wrong_Email_or_Password_message_pop_up() {
+        LoginPage login = new LoginPage();
+        Assert.assertTrue(login.wrongEmailOrPassError.isDisplayed());
+    }
 }
