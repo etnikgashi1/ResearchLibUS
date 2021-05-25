@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/",
         glue = "com/cybertekschool/step_definitions",
-        tags = "@login",
+        tags = "@RES-79",
         dryRun = false
 )
 public class CukesRunner {

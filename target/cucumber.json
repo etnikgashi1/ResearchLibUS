@@ -1,41 +1,752 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-05-25T13:54:59.190Z",
-        "line": 4,
-        "name": "As a User, I should be able to login",
+        "start_timestamp": "2021-05-25T20:46:12.557Z",
+        "line": 6,
+        "name": "Verify that student borrow books in books page",
         "description": "",
-        "id": "login-functionality;as-a-user--i-should-be-able-to-login",
+        "id": "as-a-student--i-should-be-able-to-borrow-a-book;verify-that-student-borrow-books-in-books-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1436700,
-              "status": "passed"
+              "duration": 716500,
+              "status": "skipped"
             },
-            "line": 5,
-            "name": "I login as a user",
+            "line": 7,
+            "name": "the user navigate to login page",
             "match": {
-              "location": "Login.i_login_as_a_user()"
+              "location": "User_Story_65_Step_Definitions.the_user_navigate_to_login_page()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 303900,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the student logins successfully",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_student_logins_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 284499,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "click Borrow Book option for any unborrowed book",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.click_Borrow_Book_option_for_any_unborrowed_book()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 286100,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "verify that \"The book has been borrowed...\" message was displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The book has been borrowed...\"",
+                  "offset": 12
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.verify_that_message_was_displayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 309999,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "verify that borrowed book was displayed in borrowed book page",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.verify_that_borrowed_book_was_displayed_in_borrowed_book_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 438001,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "borrowed book status shown as \"NOT RETURNED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NOT RETURNED\"",
+                  "offset": 30
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.borrowed_book_status_shown_as(String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@RES-79"
+          },
+          {
+            "name": "@RES-67"
+          },
+          {
+            "name": "@RES-78"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T20:46:12.593Z",
+        "line": 16,
+        "name": "Verify student cannot borrow twice at the same time.",
+        "description": "",
+        "id": "as-a-student--i-should-be-able-to-borrow-a-book;verify-student-cannot-borrow-twice-at-the-same-time.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 281599,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "the user navigate to login page",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 201700,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "the student logins successfully",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_student_logins_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 241001,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "the student search for a book writing \"Book\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book\"",
+                  "offset": 38
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.the_student_search_for_a_book_writing(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "the student click Borrow Book to the first available book",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_student_click_Borrow_Book_to_the_first_available_book()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190500,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "the student search for a book writing \"Book\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book\"",
+                  "offset": 38
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.the_student_search_for_a_book_writing(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 187999,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The student click to \"Borrow Book\" button nothing should happen.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Borrow Book\"",
+                  "offset": 21
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.the_student_click_to_button_nothing_should_happen(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-79"
+          },
+          {
+            "name": "@RES-68"
+          },
+          {
+            "name": "@RES-78"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T20:46:12.597Z",
+        "line": 28,
+        "name": "Verify History of borrowed books seen in Borrowing Books page",
+        "description": "",
+        "id": "as-a-student--i-should-be-able-to-borrow-a-book;verify-history-of-borrowed-books-seen-in-borrowing-books-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 242600,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "the user navigate to login page",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 192001,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "the student logins successfully",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_student_logins_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 261200,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "clicks Borrowing Books",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.clicks_Borrowing_Books()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 238499,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "Borrowed and not returned books should be seen as \"NOT RETURNED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NOT RETURNED\"",
+                  "offset": 50
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.borrowed_and_not_returned_books_should_be_seen_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 230500,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Borrowed and returned books should be seen as \"RETURNED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RETURNED\"",
+                  "offset": 46
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.borrowed_and_returned_books_should_be_seen_as(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-79"
+          },
+          {
+            "name": "@RES-69"
+          },
+          {
+            "name": "@RES-78"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T20:46:12.601Z",
+        "line": 38,
+        "name": "Verify student return book in Borrowing Books page",
+        "description": "",
+        "id": "as-a-student--i-should-be-able-to-borrow-a-book;verify-student-return-book-in-borrowing-books-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 293799,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "the user navigate to login page",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 271699,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "the student logins successfully",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_student_logins_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 198300,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "clicks Borrowing Books",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.clicks_Borrowing_Books()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 216001,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "find a \"NOT RETURNED\" book in table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NOT RETURNED\"",
+                  "offset": 7
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.find_a_book_in_table(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 183600,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "click RETURN button for that book",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.click_RETURN_button_for_that_book()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 287499,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "the status of the book should change to \"RETURNED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RETURNED\"",
+                  "offset": 40
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.the_status_of_the_book_should_change_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-79"
+          },
+          {
+            "name": "@RES-70"
+          },
+          {
+            "name": "@RES-78"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T20:46:12.605Z",
+        "line": 51,
+        "name": "Verify student is able to select book category",
+        "description": "",
+        "id": "as-a-student--i-should-be-able-to-borrow-a-book;verify-student-is-able-to-select-book-category",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 350300,
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "the user navigate to login page",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 307200,
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "the student logins successfully",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_student_logins_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 315899,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "clicks book category dropdown menu",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.clicks_book_category_dropdown_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 383900,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "as \"Action and Adventure\" category selected all the books in the table belongs to \"Action and Adventure\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Action and Adventure\"",
+                  "offset": 3
+                },
+                {
+                  "val": "\"Action and Adventure\"",
+                  "offset": 82
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.as_category_selected_all_the_books_in_the_table_belongs_to(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-79"
+          },
+          {
+            "name": "@RES-71"
+          },
+          {
+            "name": "@RES-78"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T20:46:12.610Z",
+        "line": 59,
+        "name": "Verify student select show records dropdown",
+        "description": "",
+        "id": "as-a-student--i-should-be-able-to-borrow-a-book;verify-student-select-show-records-dropdown",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 338200,
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "the user navigate to login page",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 283101,
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "the student logins successfully",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_student_logins_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 332301,
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "clicking show records dropdown and selecting \"50\" should show \"50\" books in the table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"50\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"50\"",
+                  "offset": 62
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.clicking_show_records_dropdown_and_selecting_should_show_books_in_the_table(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-79"
+          },
+          {
+            "name": "@RES-74"
+          },
+          {
+            "name": "@RES-78"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T20:46:12.613Z",
+        "line": 66,
+        "name": "Verify student can find book by using search box with book name",
+        "description": "",
+        "id": "as-a-student--i-should-be-able-to-borrow-a-book;verify-student-can-find-book-by-using-search-box-with-book-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 340599,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "the user navigate to login page",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 266400,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "the student logins successfully",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_student_logins_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 284100,
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "the student search for a book writing \"Book\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book\"",
+                  "offset": 38
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.the_student_search_for_a_book_writing(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 268900,
+              "status": "skipped"
+            },
+            "line": 70,
+            "name": "the result should be showing \"Book\" in the table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Book\"",
+                  "offset": 29
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.the_result_should_be_showing_in_the_table(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-79"
+          },
+          {
+            "name": "@RES-75"
+          },
+          {
+            "name": "@RES-78"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-25T20:46:12.617Z",
+        "line": 74,
+        "name": "Verify student can find book by using search box with book author",
+        "description": "",
+        "id": "as-a-student--i-should-be-able-to-borrow-a-book;verify-student-can-find-book-by-using-search-box-with-book-author",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 233699,
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "the user navigate to login page",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_user_navigate_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 261600,
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "the student logins successfully",
+            "match": {
+              "location": "User_Story_65_Step_Definitions.the_student_logins_successfully()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 298800,
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "the student search for an author writing \"Jack London\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jack London\"",
+                  "offset": 41
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.the_student_search_for_an_author_writing(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 202100,
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "the result should be showing \"Jack London\" in the table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jack London\"",
+                  "offset": 29
+                }
+              ],
+              "location": "User_Story_65_Step_Definitions.the_result_should_be_showing_in_the_table(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-79"
+          },
+          {
+            "name": "@RES-77"
+          },
+          {
+            "name": "@RES-78"
           }
         ]
       }
     ],
-    "name": "Login functionality",
+    "name": "As a student, I should be able to borrow a book",
     "description": "",
-    "id": "login-functionality",
+    "id": "as-a-student--i-should-be-able-to-borrow-a-book",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/User_Story_65.feature",
+    "tags": [
+      {
+        "name": "@RES-79",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
