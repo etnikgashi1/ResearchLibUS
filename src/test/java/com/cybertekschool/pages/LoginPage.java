@@ -21,4 +21,6 @@ public class LoginPage {
     public WebElement noCredError;
     @FindBy(xpath = "//div[.='Sorry, Wrong Email or Password']")
     public WebElement wrongEmailOrPassError;
+
+
 }
