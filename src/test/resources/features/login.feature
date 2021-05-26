@@ -43,3 +43,4 @@ Feature: Login functionality
     And I write my password "123456789"
     When I click on sign in button
     Then I should see Sorry, Wrong Email or Password message pop up
+
