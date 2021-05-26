@@ -22,4 +22,15 @@ public class LoginPage {
     @FindBy(xpath = "//div[.='Sorry, Wrong Email or Password']")
     public WebElement wrongEmailOrPassError;
 
+
+    @FindBy(id = "inputEmail")
+    public WebElement emailField;
+    @FindBy(id = "inputPassword")
+    public WebElement passwordField;
+    @FindBy(tagName = "button")
+    public WebElement signInButton;
+    @FindBy(id = "inputEmail-error")
+    public WebElement noCredError;
+    @FindBy(xpath = "//div[.='Sorry, Wrong Email or Password']")
+    public WebElement wrongEmailOrPassError;
 }
