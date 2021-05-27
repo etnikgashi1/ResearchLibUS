@@ -1,12 +1,12 @@
 package com.cybertekschool.step_definitions;
 
 
-import io.cucumber.java.en.Given;
 import com.cybertekschool.pages.LoginPage;
 import com.cybertekschool.utilities.ConfigurationReader;
 import com.cybertekschool.utilities.Driver;
-import io.cucumber.java.en.Then;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;

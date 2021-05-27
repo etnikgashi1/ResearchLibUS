@@ -1,41 +1,28 @@
 package com.cybertekschool.step_definitions;
-
-import com.cybertekschool.utilities.ConfigurationReader;
 import com.cybertekschool.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-
-import org.openqa.selenium.*;
 import org.openqa.selenium.OutputType;
-
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
-
     @Before
     public void setUp(){
-        Driver.get().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        Driver.get().manage().window().maximize();
+        Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
-
     @After
     public void tearDown(Scenario scenario){
-        if(scenario.isFailed()){
+        System.out.println("After hooks");
+        // check if the scenario is failed
+        if (scenario.isFailed()){
+            // take that screenshot
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot,"image/png","screenshot");
+            // attach the scenario to the report
+            scenario.embed(screenshot, "image/png");
         }
-
-        //close Driver
         Driver.closeDriver();
-
     }
-
-
 }
-
