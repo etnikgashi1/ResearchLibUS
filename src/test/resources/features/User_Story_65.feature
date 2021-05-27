@@ -1,4 +1,4 @@
-@RES-79
+@RES-79 @smoke
 Feature: As a student, I should be able to borrow a book
 
 	#1-Student can borrow books in books page.
@@ -6,7 +6,7 @@ Feature: As a student, I should be able to borrow a book
   Scenario: Verify that student borrow books in books page
     Given the user navigate to login page
     When the student logins successfully
-    And click Borrow Book option for any unborrowed book
+#   And click Borrow Book option for any unborrowed book
 #    Then verify that "The book has been borrowed..." message was displayed
 #    And verify that borrowed book was displayed in borrowed book page
 #    And borrowed book status shown as "NOT RETURNED"
