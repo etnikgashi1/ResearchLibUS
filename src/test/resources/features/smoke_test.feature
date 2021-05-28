@@ -64,13 +64,3 @@ Feature:
     And I write my password ""
     When I click on sign in button
     Then I should see This field is required. message pop up
-
-	#1-Student can borrow books in books page.
-  @RES-67 @RES-78
-  Scenario: Verify that student borrow books in books page
-    Given the user navigate to login page
-    When the student logins successfully
-    And click Borrow Book option for any unborrowed book
-    Then verify that "The book has been borrowed..." message was displayed
-    And verify that borrowed book was displayed in borrowed book page
-    And borrowed book status shown as "NOT RETURNED"
