@@ -1,0 +1,950 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-27T13:08:00.177Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3472173300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify that Student can log in with valid credentials (automated)",
+        "description": "",
+        "id": ";verify-that-student-can-log-in-with-valid-credentials-(automated);;2",
+        "after": [
+          {
+            "result": {
+              "duration": 559269000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1387481700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53386200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I write my email address \"student47@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student47@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15631600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I write my password \"3lUpdof3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"3lUpdof3\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 332044900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1534829200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see books page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_should_see_books_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-82"
+          },
+          {
+            "name": "@RES-72"
+          },
+          {
+            "name": "@RES-81"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T13:08:07.570Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2779487300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verify that Student can log in with valid credentials (automated)",
+        "description": "",
+        "id": ";verify-that-student-can-log-in-with-valid-credentials-(automated);;3",
+        "after": [
+          {
+            "result": {
+              "duration": 538935000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1298576200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30027800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I write my email address \"student48@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student48@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18015800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I write my password \"b0zgv1ab\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"b0zgv1ab\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 317288300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1537396500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see books page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_should_see_books_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-82"
+          },
+          {
+            "name": "@RES-72"
+          },
+          {
+            "name": "@RES-81"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T13:08:14.094Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2656587300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify that Student can log in with valid credentials (automated)",
+        "description": "",
+        "id": ";verify-that-student-can-log-in-with-valid-credentials-(automated);;4",
+        "after": [
+          {
+            "result": {
+              "duration": 555467400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1334085400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31251500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I write my email address \"student49@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student49@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6505900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I write my password \"npSk3tsr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"npSk3tsr\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 332049500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1545694900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see books page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_should_see_books_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-82"
+          },
+          {
+            "name": "@RES-72"
+          },
+          {
+            "name": "@RES-81"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T13:08:20.556Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2643934200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Verify that Librarian can log in with valid credentials (automated)",
+        "description": "",
+        "id": ";verify-that-librarian-can-log-in-with-valid-credentials-(automated);;2",
+        "after": [
+          {
+            "result": {
+              "duration": 522378500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1334803800,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31253000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I write my email address \"librarian26@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian26@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22134200,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I write my password \"gFOHHm6H\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gFOHHm6H\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 316426400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1526732500,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should see dashboard page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-82"
+          },
+          {
+            "name": "@RES-73"
+          },
+          {
+            "name": "@RES-81"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T13:08:26.955Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2644435100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Verify that Librarian can log in with valid credentials (automated)",
+        "description": "",
+        "id": ";verify-that-librarian-can-log-in-with-valid-credentials-(automated);;3",
+        "after": [
+          {
+            "result": {
+              "duration": 545074500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1365684500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37759000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I write my email address \"librarian27@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian27@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15630500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I write my password \"ZM9JMdIK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ZM9JMdIK\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 332044300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1532253600,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should see dashboard page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-82"
+          },
+          {
+            "name": "@RES-73"
+          },
+          {
+            "name": "@RES-81"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T13:08:33.429Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2660803500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Verify that Librarian can log in with valid credentials (automated)",
+        "description": "",
+        "id": ";verify-that-librarian-can-log-in-with-valid-credentials-(automated);;4",
+        "after": [
+          {
+            "result": {
+              "duration": 544520600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1322356600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28025200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I write my email address \"librarian28@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian28@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16014600,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I write my password \"wVFVnaCO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wVFVnaCO\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 317288200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1531391000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should see dashboard page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-82"
+          },
+          {
+            "name": "@RES-73"
+          },
+          {
+            "name": "@RES-81"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T13:08:39.849Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2644036500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "Verify that User cannot log in with no credentials (automated)",
+        "description": "",
+        "id": ";verify-that-user-cannot-log-in-with-no-credentials-(automated)",
+        "after": [
+          {
+            "result": {
+              "duration": 501363900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1381162300,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15626500,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I write my email address \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6506900,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I write my password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 247413400,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15627100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I should see This field is required. message pop up",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_should_see_This_field_is_required_message_pop_up()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-82"
+          },
+          {
+            "name": "@RES-76"
+          },
+          {
+            "name": "@RES-81"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T13:08:44.661Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2674661300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "Verify that User cannot log in with invalid credentials (automated)",
+        "description": "",
+        "id": ";verify-that-user-cannot-log-in-with-invalid-credentials-(automated)",
+        "after": [
+          {
+            "result": {
+              "duration": 500804000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1328000600,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 26023500,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "I write my email address \"person@library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"person@library\"",
+                  "offset": 25
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19017600,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I write my password \"123456789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456789\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 221201400,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I click on sign in button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20017600,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I should see Sorry, Wrong Email or Password message pop up",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.Login.i_should_see_Sorry_Wrong_Email_or_Password_message_pop_up()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RES-82"
+          },
+          {
+            "name": "@RES-80"
+          },
+          {
+            "name": "@RES-81"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/1.feature",
+    "tags": [
+      {
+        "name": "@RES-82",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
