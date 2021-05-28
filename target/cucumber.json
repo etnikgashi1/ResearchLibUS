@@ -1,13 +1,34 @@
 [
   {
-    "line": 2,
+    "line": 5,
     "elements": [
       {
-        "start_timestamp": "2021-05-27T13:08:00.177Z",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1317963200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is in the log in page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_is_in_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-28T17:05:55.557Z",
         "before": [
           {
             "result": {
-              "duration": 3472173300,
+              "duration": 2685627700,
               "status": "passed"
             },
             "match": {
@@ -15,14 +36,14 @@
             }
           }
         ],
-        "line": 19,
-        "name": "Verify that Student can log in with valid credentials (automated)",
+        "line": 11,
+        "name": "Verify that Librarian users should be able to add books",
         "description": "",
-        "id": ";verify-that-student-can-log-in-with-valid-credentials-(automated);;2",
+        "id": "only-librarians-should-be-able-to-add-books;verify-that-librarian-users-should-be-able-to-add-books",
         "after": [
           {
             "result": {
-              "duration": 559269000,
+              "duration": 921432500,
               "status": "passed"
             },
             "match": {
@@ -31,99 +52,120 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1387481700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 53386200,
+              "duration": 385761800,
               "status": "passed"
             },
             "line": 12,
-            "name": "I write my email address \"student47@library\"",
+            "name": "the user enters the librarian information",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"student47@library\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15631600,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I write my password \"3lUpdof3\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"3lUpdof3\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 332044900,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I click on sign in button",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_enters_the_librarian_information()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1534829200,
+              "duration": 2219852500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user navigate to Books module",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_navigate_to_Books_module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 418741600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user click on Add Book button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_click_on_Add_Book_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 854474700,
               "status": "passed"
             },
             "line": 15,
-            "name": "I should see books page",
+            "name": "fill the necessary input boxes with valid inputs",
             "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_should_see_books_page()"
+              "location": "com.cybertekschool.step_definitions.AddBook.fill_the_necessary_input_boxes_with_valid_inputs()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149908300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user click on Save Changes",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_click_on_Save_Changes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2997400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "\"The book has been created.\" message should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The book has been created.\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.cybertekschool.step_definitions.AddBook.message_should_be_displayed(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@RES-82"
-          },
-          {
-            "name": "@RES-72"
-          },
-          {
-            "name": "@RES-81"
+            "name": "@addBook"
           }
         ]
       },
       {
-        "start_timestamp": "2021-05-27T13:08:07.570Z",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1263223200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is in the log in page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_is_in_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-28T17:06:04.631Z",
         "before": [
           {
             "result": {
-              "duration": 2779487300,
+              "duration": 1968234400,
               "status": "passed"
             },
             "match": {
@@ -132,593 +174,13 @@
           }
         ],
         "line": 20,
-        "name": "Verify that Student can log in with valid credentials (automated)",
+        "name": "Verify the book parameters in the Add Book Page",
         "description": "",
-        "id": ";verify-that-student-can-log-in-with-valid-credentials-(automated);;3",
+        "id": "only-librarians-should-be-able-to-add-books;verify-the-book-parameters-in-the-add-book-page",
         "after": [
           {
             "result": {
-              "duration": 538935000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1298576200,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 30027800,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I write my email address \"student48@library\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"student48@library\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 18015800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I write my password \"b0zgv1ab\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"b0zgv1ab\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 317288300,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I click on sign in button",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1537396500,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I should see books page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_should_see_books_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RES-82"
-          },
-          {
-            "name": "@RES-72"
-          },
-          {
-            "name": "@RES-81"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-27T13:08:14.094Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2656587300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 21,
-        "name": "Verify that Student can log in with valid credentials (automated)",
-        "description": "",
-        "id": ";verify-that-student-can-log-in-with-valid-credentials-(automated);;4",
-        "after": [
-          {
-            "result": {
-              "duration": 555467400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1334085400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 31251500,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I write my email address \"student49@library\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"student49@library\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6505900,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I write my password \"npSk3tsr\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"npSk3tsr\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 332049500,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I click on sign in button",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1545694900,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I should see books page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_should_see_books_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RES-82"
-          },
-          {
-            "name": "@RES-72"
-          },
-          {
-            "name": "@RES-81"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-27T13:08:20.556Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2643934200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 38,
-        "name": "Verify that Librarian can log in with valid credentials (automated)",
-        "description": "",
-        "id": ";verify-that-librarian-can-log-in-with-valid-credentials-(automated);;2",
-        "after": [
-          {
-            "result": {
-              "duration": 522378500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1334803800,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 31253000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I write my email address \"librarian26@library\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"librarian26@library\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22134200,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I write my password \"gFOHHm6H\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"gFOHHm6H\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 316426400,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I click on sign in button",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1526732500,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I should see dashboard page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_should_see_dashboard_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RES-82"
-          },
-          {
-            "name": "@RES-73"
-          },
-          {
-            "name": "@RES-81"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-27T13:08:26.955Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2644435100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 39,
-        "name": "Verify that Librarian can log in with valid credentials (automated)",
-        "description": "",
-        "id": ";verify-that-librarian-can-log-in-with-valid-credentials-(automated);;3",
-        "after": [
-          {
-            "result": {
-              "duration": 545074500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1365684500,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 37759000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I write my email address \"librarian27@library\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"librarian27@library\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 15630500,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I write my password \"ZM9JMdIK\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ZM9JMdIK\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 332044300,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I click on sign in button",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1532253600,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I should see dashboard page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_should_see_dashboard_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RES-82"
-          },
-          {
-            "name": "@RES-73"
-          },
-          {
-            "name": "@RES-81"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-27T13:08:33.429Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2660803500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 40,
-        "name": "Verify that Librarian can log in with valid credentials (automated)",
-        "description": "",
-        "id": ";verify-that-librarian-can-log-in-with-valid-credentials-(automated);;4",
-        "after": [
-          {
-            "result": {
-              "duration": 544520600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1322356600,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 28025200,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "I write my email address \"librarian28@library\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"librarian28@library\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 16014600,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "I write my password \"wVFVnaCO\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"wVFVnaCO\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 317288200,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I click on sign in button",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1531391000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I should see dashboard page",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_should_see_dashboard_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@RES-82"
-          },
-          {
-            "name": "@RES-73"
-          },
-          {
-            "name": "@RES-81"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-05-27T13:08:39.849Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2644036500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 48,
-        "name": "Verify that User cannot log in with no credentials (automated)",
-        "description": "",
-        "id": ";verify-that-user-cannot-log-in-with-no-credentials-(automated)",
-        "after": [
-          {
-            "result": {
-              "duration": 501363900,
+              "duration": 1034239200,
               "status": "passed"
             },
             "match": {
@@ -731,95 +193,118 @@
         "steps": [
           {
             "result": {
-              "duration": 1381162300,
+              "duration": 399754900,
               "status": "passed"
             },
-            "line": 49,
-            "name": "I navigate to the login page",
+            "line": 21,
+            "name": "the user enters the librarian information",
             "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 15626500,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "I write my email address \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6506900,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "I write my password \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 247413400,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "I click on sign in button",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_enters_the_librarian_information()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 15627100,
+              "duration": 3952067500,
               "status": "passed"
             },
-            "line": 53,
-            "name": "I should see This field is required. message pop up",
+            "line": 22,
+            "name": "the user navigate to Books module",
             "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_should_see_This_field_is_required_message_pop_up()"
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_navigate_to_Books_module()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 439292900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user click on Add Book button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_click_on_Add_Book_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 521677600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "following book parameters should be displayed on the table",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.following_book_parameters_should_be_displayed_on_the_table(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Book Name"
+                ]
+              },
+              {
+                "cells": [
+                  "ISBN"
+                ]
+              },
+              {
+                "cells": [
+                  "Year"
+                ]
+              },
+              {
+                "cells": [
+                  "Author"
+                ]
+              },
+              {
+                "cells": [
+                  "Book Category"
+                ]
+              },
+              {
+                "cells": [
+                  "Description"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@RES-82"
-          },
-          {
-            "name": "@RES-76"
-          },
-          {
-            "name": "@RES-81"
+            "name": "@addBook"
           }
         ]
       },
       {
-        "start_timestamp": "2021-05-27T13:08:44.661Z",
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1223286500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is in the log in page",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_is_in_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-28T17:06:14.231Z",
         "before": [
           {
             "result": {
-              "duration": 2674661300,
+              "duration": 1817133000,
               "status": "passed"
             },
             "match": {
@@ -827,14 +312,14 @@
             }
           }
         ],
-        "line": 61,
-        "name": "Verify that User cannot log in with invalid credentials (automated)",
+        "line": 33,
+        "name": "Verify the book categories in the Add Book Page",
         "description": "",
-        "id": ";verify-that-user-cannot-log-in-with-invalid-credentials-(automated)",
+        "id": "only-librarians-should-be-able-to-add-books;verify-the-book-categories-in-the-add-book-page",
         "after": [
           {
             "result": {
-              "duration": 500804000,
+              "duration": 1030874500,
               "status": "passed"
             },
             "match": {
@@ -847,101 +332,173 @@
         "steps": [
           {
             "result": {
-              "duration": 1328000600,
+              "duration": 467712200,
               "status": "passed"
             },
-            "line": 62,
-            "name": "I navigate to the login page",
+            "line": 34,
+            "name": "the user enters the librarian information",
             "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 26023500,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "I write my email address \"person@library\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"person@library\"",
-                  "offset": 25
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 19017600,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "I write my password \"123456789\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"123456789\"",
-                  "offset": 20
-                }
-              ],
-              "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 221201400,
-              "status": "passed"
-            },
-            "line": 65,
-            "name": "I click on sign in button",
-            "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_enters_the_librarian_information()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 20017600,
+              "duration": 2330184300,
               "status": "passed"
             },
-            "line": 66,
-            "name": "I should see Sorry, Wrong Email or Password message pop up",
+            "line": 35,
+            "name": "the user navigate to Books module",
             "match": {
-              "location": "com.cybertekschool.step_definitions.Login.i_should_see_Sorry_Wrong_Email_or_Password_message_pop_up()"
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_navigate_to_Books_module()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 409755900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the user click on Add Book button",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.the_user_click_on_Add_Book_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1168864600,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "following book categories should be able to selected on the dropdown menu",
+            "match": {
+              "location": "com.cybertekschool.step_definitions.AddBook.following_book_categories_should_be_able_to_selected_on_the_dropdown_menu(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Action and Adventure"
+                ]
+              },
+              {
+                "cells": [
+                  "Anthology"
+                ]
+              },
+              {
+                "cells": [
+                  "Classic"
+                ]
+              },
+              {
+                "cells": [
+                  "Comic and Graphic Novel"
+                ]
+              },
+              {
+                "cells": [
+                  "Crime and Detective"
+                ]
+              },
+              {
+                "cells": [
+                  "Drama"
+                ]
+              },
+              {
+                "cells": [
+                  "Fable"
+                ]
+              },
+              {
+                "cells": [
+                  "Fairy Tale"
+                ]
+              },
+              {
+                "cells": [
+                  "Fan-Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Fantasy"
+                ]
+              },
+              {
+                "cells": [
+                  "Historical Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Horror"
+                ]
+              },
+              {
+                "cells": [
+                  "Science Fiction"
+                ]
+              },
+              {
+                "cells": [
+                  "Biography/Autobiography"
+                ]
+              },
+              {
+                "cells": [
+                  "Humor"
+                ]
+              },
+              {
+                "cells": [
+                  "Romance"
+                ]
+              },
+              {
+                "cells": [
+                  "Short Story"
+                ]
+              },
+              {
+                "cells": [
+                  "Essay"
+                ]
+              },
+              {
+                "cells": [
+                  "Memoir"
+                ]
+              },
+              {
+                "cells": [
+                  "Poetry"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@RES-82"
-          },
-          {
-            "name": "@RES-80"
-          },
-          {
-            "name": "@RES-81"
+            "name": "@addBook"
           }
         ]
       }
     ],
-    "name": "",
-    "description": "",
-    "id": "",
+    "name": "Only librarians should be able to add books",
+    "description": "  Description: Verify that a librarian can add book, test the functionality",
+    "id": "only-librarians-should-be-able-to-add-books",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/1.feature",
+    "uri": "file:src/test/resources/features/addbook.feature",
     "tags": [
       {
-        "name": "@RES-82",
+        "name": "@addBook",
         "type": "Tag",
         "location": {
-          "line": 1,
+          "line": 4,
           "column": 1
         }
       }

@@ -1,639 +1,98 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/1.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/addbook.feature");
 formatter.feature({
-  "name": "",
-  "description": "",
+  "name": "Only librarians should be able to add books",
+  "description": "  Description: Verify that a librarian can add book, test the functionality",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@RES-82"
+      "name": "@addBook"
     }
   ]
 });
-formatter.scenarioOutline({
-  "name": "Verify that Student can log in with valid credentials (automated)",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@RES-72"
-    },
-    {
-      "name": "@RES-81"
-    }
-  ]
-});
-formatter.step({
-  "name": "I navigate to the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "I write my email address \"\u003cemail\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I write my password \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I click on sign in button",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "I should see books page",
-  "keyword": "Then "
-});
-formatter.examples({
+formatter.background({
   "name": "",
   "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "student47@library",
-        "3lUpdof3"
-      ]
-    },
-    {
-      "cells": [
-        "student48@library",
-        "b0zgv1ab"
-      ]
-    },
-    {
-      "cells": [
-        "student49@library",
-        "npSk3tsr"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Verify that Student can log in with valid credentials (automated)",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@RES-82"
-    },
-    {
-      "name": "@RES-72"
-    },
-    {
-      "name": "@RES-81"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to the login page",
+  "name": "the user is in the log in page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_is_in_the_login_page()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my email address \"student47@library\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my password \"3lUpdof3\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see books page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_should_see_books_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Verify that Student can log in with valid credentials (automated)",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@RES-82"
-    },
-    {
-      "name": "@RES-72"
-    },
-    {
-      "name": "@RES-81"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my email address \"student48@library\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my password \"b0zgv1ab\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see books page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_should_see_books_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verify that Student can log in with valid credentials (automated)",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@RES-82"
-    },
-    {
-      "name": "@RES-72"
-    },
-    {
-      "name": "@RES-81"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my email address \"student49@library\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my password \"npSk3tsr\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see books page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_should_see_books_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "name": "Verify that Librarian can log in with valid credentials (automated)",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@RES-73"
-    },
-    {
-      "name": "@RES-81"
-    }
-  ]
-});
-formatter.step({
-  "name": "I navigate to the login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "I write my email address \"\u003cemail\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I write my password \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "I click on sign in button",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "I should see dashboard page",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "password"
-      ]
-    },
-    {
-      "cells": [
-        "librarian26@library",
-        "gFOHHm6H"
-      ]
-    },
-    {
-      "cells": [
-        "librarian27@library",
-        "ZM9JMdIK"
-      ]
-    },
-    {
-      "cells": [
-        "librarian28@library",
-        "wVFVnaCO"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Verify that Librarian can log in with valid credentials (automated)",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@RES-82"
-    },
-    {
-      "name": "@RES-73"
-    },
-    {
-      "name": "@RES-81"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my email address \"librarian26@library\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my password \"gFOHHm6H\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see dashboard page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_should_see_dashboard_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verify that Librarian can log in with valid credentials (automated)",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@RES-82"
-    },
-    {
-      "name": "@RES-73"
-    },
-    {
-      "name": "@RES-81"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my email address \"librarian27@library\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my password \"ZM9JMdIK\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see dashboard page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_should_see_dashboard_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verify that Librarian can log in with valid credentials (automated)",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@RES-82"
-    },
-    {
-      "name": "@RES-73"
-    },
-    {
-      "name": "@RES-81"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigate to the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my email address \"librarian28@library\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my password \"wVFVnaCO\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on sign in button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I should see dashboard page",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_should_see_dashboard_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verify that User cannot log in with no credentials (automated)",
+  "name": "Verify that Librarian users should be able to add books",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@RES-82"
-    },
-    {
-      "name": "@RES-76"
-    },
-    {
-      "name": "@RES-81"
+      "name": "@addBook"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "I navigate to the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my email address \"\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my password \"\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click on sign in button",
+  "name": "the user enters the librarian information",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_enters_the_librarian_information()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I should see This field is required. message pop up",
+  "name": "the user navigate to Books module",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_navigate_to_Books_module()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on Add Book button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_click_on_Add_Book_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "fill the necessary input boxes with valid inputs",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.fill_the_necessary_input_boxes_with_valid_inputs()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on Save Changes",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_click_on_Save_Changes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "\"The book has been created.\" message should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_should_see_This_field_is_required_message_pop_up()"
+  "location": "com.cybertekschool.step_definitions.AddBook.message_should_be_displayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -641,71 +100,171 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Verify that User cannot log in with invalid credentials (automated)",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@RES-82"
-    },
-    {
-      "name": "@RES-80"
-    },
-    {
-      "name": "@RES-81"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "I navigate to the login page",
+  "name": "the user is in the log in page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_navigate_to_the_login_page()"
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_is_in_the_login_page()"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "I write my email address \"person@library\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_email_address(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I write my password \"123456789\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_write_my_password(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
+formatter.scenario({
+  "name": "Verify the book parameters in the Add Book Page",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@addBook"
+    }
+  ]
 });
 formatter.step({
-  "name": "I click on sign in button",
+  "name": "the user enters the librarian information",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_click_on_sign_in_button()"
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_enters_the_librarian_information()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I should see Sorry, Wrong Email or Password message pop up",
+  "name": "the user navigate to Books module",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_navigate_to_Books_module()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on Add Book button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_click_on_Add_Book_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "following book parameters should be displayed on the table",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.cybertekschool.step_definitions.Login.i_should_see_Sorry_Wrong_Email_or_Password_message_pop_up()"
+  "location": "com.cybertekschool.step_definitions.AddBook.following_book_parameters_should_be_displayed_on_the_table(java.util.List\u003cjava.lang.String\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is in the log in page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_is_in_the_login_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify the book categories in the Add Book Page",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@addBook"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user enters the librarian information",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_enters_the_librarian_information()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigate to Books module",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_navigate_to_Books_module()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on Add Book button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.the_user_click_on_Add_Book_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "following book categories should be able to selected on the dropdown menu",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.cybertekschool.step_definitions.AddBook.following_book_categories_should_be_able_to_selected_on_the_dropdown_menu(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"
