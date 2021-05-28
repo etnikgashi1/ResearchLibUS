@@ -1,4 +1,4 @@
-@RES-79 @smoke
+@RES-79
 Feature: As a student, I should be able to borrow a book
 
 	#1-Student can borrow books in books page.

@@ -1,4 +1,4 @@
-@RES-90
+@RES-90 @smoke
 Feature:
 
 	#Only authorized users should be able to login the application using valid credentials
